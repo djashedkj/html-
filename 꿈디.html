@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>세계 명소 소개</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Nanum Gothic', sans-serif;
+      background: #fdfcfb;
+      color: #333;
+    }
+
+    header {
+      background: url('https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+      color: white;
+      padding: 5rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      opacity: 0.9;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+      padding: 3rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 1.5rem;
+    }
+
+    .card-content h3 {
+      margin-top: 0;
+      color: #0077cc;
+    }
+
+    .card-content p {
+      line-height: 1.6;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #eee;
+      color: #555;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>세계 명소 소개</h1>
+    <p>가장 상징적인 여행지를 지금 만나보세요</p>
+  </header>
+
+  <section class="gallery">
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Eiffel_Tower_day.jpg" alt="에펠탑" />
+      <div class="card-content">
+        <h3>에펠탑 (프랑스)</h3>
+        <p>프랑스 파리에 위치한 에펠탑은 1889년 만국박람회를 기념하여 지어진 아이콘입니다.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Great_Wall_of_China_July_2006.JPG" alt="만리장성" />
+      <div class="card-content">
+        <h3>만리장성 (중국)</h3>
+        <p>중국 전역에 걸쳐 이어진 성벽으로, 수천 년간 나라를 지키는 방어선 역할을 해왔습니다.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Statue_of_Liberty_7.jpg" alt="자유의 여신상" />
+      <div class="card-content">
+        <h3>자유의 여신상 (미국)</h3>
+        <p>뉴욕 항에 위치한 이 조각상은 자유와 희망의 상징으로 전 세계인의 사랑을 받고 있습니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 세계 명소 소개 | All rights reserved.
+  </footer>
+
+</body>
+</html>
